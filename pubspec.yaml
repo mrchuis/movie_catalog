@@ -1,0 +1,55 @@
+name: film_catalog_app
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+
+  #Библиотека для выполнения http/https-запросов
+  http: ^0.13.3 
+
+  #Библиотека позволяет использовать пакет управления состояний блока.
+  flutter_bloc: ^7.1.0
+
+  #Плагин позволяет реализовать равенство на основе значений без необходимости явно 
+  # переопределять == и hashCode.
+  equatable: ^2.0.3
+
+  # Библиотека с инструментами функционального программирования
+  dartz: ^0.10.0
+
+  # Библиотека для проверки соединения интернета
+  internet_connection_checker: ^0.0.1+2
+
+  # Указатель сервисов (Service locator), который позволяет отделить интерфейс от конкретной
+  # реализации и получить доступ к конкретной реализации из любого места приложения.
+  get_it: ^7.2.0
+
+  #Библиотека для загрузки, отображения, кеширования и хранения сетевых изображений
+  cached_network_image: ^3.1.0  
+
+  #Библиотека для чтения и записи простых пар ключ-значение.
+  shared_preferences: ^2.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  bloc_test: ^8.1.0
+  mocktail: ^0.1.4
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/no_movie.png
+
